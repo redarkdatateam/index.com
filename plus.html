@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REDARK | DMD DATA SOLUTIONS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazir-font@latest/dist/font-face.css">
+    <style>
+        /* Full-page animated background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff0000, red, darkred, #ff0000);
+            animation: gradientAnimation 10s ease infinite;
+            font-family: 'Vazir', sans-serif;
+            overflow: scroll; 
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .black-box {
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            margin-top: 300px;
+            max-width: 1200px;
+        }
+
+        .table-title {
+            color: white;
+            font-size: 20px;
+            text-align: right;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        th:first-child,
+        td:first-child {
+            text-align: right;
+            width: 35%;
+        }
+
+        .feature-column {
+            color: #ff4444;
+            font-weight: 500;
+        }
+        .price-row {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .price-row td {
+            border: none;
+            padding: 20px;
+            font-size: 14px;
+        }        .hint {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="black-box">
+        <div class="table-title"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>alpha</th>
+                    <th>beta</th>
+                    <th>plus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="feature-column">Age</td>
+                    <td>YES</td>
+                    <td>AGE AT ONCE</td>
+                    <TD>AGE AT ONCE AND AT VISIT</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Gender</td>
+                    <td>male/female</td>
+                    <td>male/female</td>
+                    <TD>male/female</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Ambulatory_Status</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Mutation_Type</td>
+                    <td>non-Deletion_Exon</td>
+                    <td>Deletion_Exon</td>
+                    <TD>Deletion_Exon</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">CK_Level</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">FVC_Percent</td>
+                    <td>No</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">LVEF_Percent</td>
+                    <td>No</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Scoliosis</td>
+                    <td>No</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Steroid_Use</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <TD>YES(WITH DATE OF START)</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Disease_Stage</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Wheelchair_Use</td>
+                    <td>No</td>
+                    <td>YES</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Genetic_Test_Result</td>
+                    <td>No</td>
+                    <td>YES</td>
+                    <TD>No</TD>
+                </tr>
+                <tr>
+                <td class="feature-column">Cardiomyopathy</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <TD>YES</TD>
+                </tr>
+                <tr>
+                    <td class="feature-column">File Format</td>
+                    <td>CSV/Excel</td>
+                    <td>CSV/Excel</td>
+                    <td>CSV/Excel</td>
+                </tr>
+                
+                <tr class="price-row">
+                    <td class="feature-column">Pricing Model</td>
+                    <td colspan="3">Starts at "Be my ghost for 100 patients" - scalable enterprise solutions available</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="hint">* Features shown represent standardized capabilities - actual implementation includes proprietary algorithms and validation protocols</div>
+    </div>
+</body>
+</html>
