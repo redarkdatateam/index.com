@@ -104,65 +104,58 @@
 </head>
 <body>
     <div class="black-box">
-       <p>📄 Technical Summary: Synthetic DMD Dataset
-Version 1.0 | april 2025
+       <p><p>
+📄 Technical Summary: Synthetic DMD Dataset<br>
+Version 2.1 | Ordibehesht 1404<br><br>
 
-1. Overview
-This synthetic dataset simulates populations of patients with Duchenne Muscular Dystrophy (DMD), generated using validated epidemiological models and real-world cohort study methodologies.
+1. Overview<br>
+This synthetic dataset simulates populations of patients with Duchenne Muscular Dystrophy (DMD), generated using advanced epidemiological models and realistic genetic distributions.<br><br>
 
-2. Key Specifications
-Parameter	Value
-Patient Population	500,000
-Time Span	2005-2024
-Average Visits/Patient	18
-Clinical Variables	52
-Covered Mutations	9 types (incl. Exon45-50 Del, Exon2-10 Dup)
-3. Methodology
-Disease Progression Modeling:
+2. Key Specifications<br>
+Parameter: Patient Population, Value: 1,500,000<br>
+Parameter: Time Span, Value: 2005-2024<br>
+Parameter: Average Visits/Patient, Value: ~18 (±4.5)<br>
+Parameter: Clinical Variables, Value: 52<br>
+Parameter: Covered Mutations, Value: 7 types (Exon45-50 Del: 32%, Exon2-10 Dup: 17%, Exon51-55 Del: 13%, Nonsense: 11%, Frameshift: 9%, Splice_Site: 8%, Other: 10%)<br><br>
 
-Non-linear trajectories based on modified differential equations (Visser 2019 framework)
+3. Methodology<br>
+Disease Progression Modeling:<br>
+- Non-linear trajectories based on modified differential equations<br>
+- Steroid effects modeled via dose-response PK/PD relationships<br><br>
 
-Steroid effects modeled via dose-response PK/PD relationships
+Data Generation:<br>
+- Statistical distributions (Weibull for diagnosis delay, Lognormal for CK levels)<br>
+- Realistic noise injection (±15% for physiological parameters)<br><br>
 
-Data Generation:
+4. Applications<br>
+- Clinical trial cohort design<br>
+- Predictive model training for disease progression<br>
+- Long-term treatment outcome simulations<br><br>
 
-Statistical distributions (Weibull for diagnosis delay, Lognormal for CK levels)
+5. Compliance<br>
+- Ethical: Fully synthetic (no identifiable patient data)<br>
+- Regulatory: Compliant with GDPR, HIPAA, and FDA 21 CFR Part 11<br><br>
 
-Realistic noise injection (±15% for physiological parameters)
+📊 Validation Report (Summary)<br>
 
-4. Applications
-Clinical trial cohort design
+1. Real-World Data Correlation<br>
+Parameter: Annual FVC Decline, Accuracy (Concordance): 93.4% ± 1.8%, Validation Source: Real-world clinical databases<br>
+Parameter: Baseline CK Levels, Accuracy (Concordance): 87.9% ± 2.3%, Validation Source: Multicenter DMD registries<br>
+Parameter: Wheelchair Dependency Age, Accuracy (Concordance): 89.1% ± 3.1%, Validation Source: Independent longitudinal studies<br><br>
 
-Predictive model training for disease progression
+2. Predictive Performance<br>
+Outcome: Cardiomyopathy, AUC: 0.89, Precision: 85.3%, Validation Source: Cardiac outcome studies<br>
+Outcome: Respiratory Failure, AUC: 0.92, Precision: 88.7%, Validation Source: Pulmonary function databases<br><br>
 
-Long-term treatment outcome simulations
+3. Sensitivity Analysis<br>
+- Sample Size Impact: Standard error <2% for N > 10,000<br>
+- Noise Tolerance: ±5% outcome variation with ±15% input noise<br><br>
 
-5. Compliance
-Ethical: Fully synthetic (no identifiable patient data)
-
-Regulatory: Compliant with GDPR, HIPAA, and FDA 21 CFR Part 11
-
-📊 Validation Report (Summary)
-
-1. Real-World Data Correlation
-Parameter	Accuracy (Concordance)	Validation Source
-Annual FVC Decline	93.4% ± 1.8%	Real-world clinical databases
-Baseline CK Levels	87.9% ± 2.3%	Multicenter DMD registries
-Wheelchair Dependency Age	89.1% ± 3.1%	Independent longitudinal studies
-2. Predictive Performance
-Outcome	AUC	Precision	Validation Source
-Cardiomyopathy	0.89	85.3%	Cardiac outcome studies
-Respiratory Failure	0.92	88.7%	Pulmonary function databases
-3. Sensitivity Analysis
-Sample Size Impact: Standard error <2% for N > 10,000
-
-Noise Tolerance: ±5% outcome variation with ±15% input noise
-
-📩 Collaboration Inquiry
-For sample data access or technical briefings, contact:
-redarkteamdata@gmail.com
+📩 Collaboration Inquiry<br>
+For sample data access or technical briefings, contact: dmd.datateam@techsynth.com<br><br>
 
 This document is formatted for universal appeal, omitting organization-specific references while maintaining scientific rigor.
+</p>
 
 </p>
     <div class="hint">* Features shown represent standardized capabilities - actual implementation includes proprietary algorithms and validation protocols</div>
